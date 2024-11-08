@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NikhilNamade/static/css/main.f855e6bc.css",
+    "main.js": "/NikhilNamade/static/js/main.ba9820f6.js",
+    "static/js/453.b4ae353a.chunk.js": "/NikhilNamade/static/js/453.b4ae353a.chunk.js",
+    "index.html": "/NikhilNamade/index.html",
+    "main.f855e6bc.css.map": "/NikhilNamade/static/css/main.f855e6bc.css.map",
+    "main.ba9820f6.js.map": "/NikhilNamade/static/js/main.ba9820f6.js.map",
+    "453.b4ae353a.chunk.js.map": "/NikhilNamade/static/js/453.b4ae353a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.ba9820f6.js"
+  ]
+}
