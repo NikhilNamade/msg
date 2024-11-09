@@ -3,6 +3,7 @@ import {useState} from "react"
 function App() {
   const [isSelected, setSelected] = useState(false)
   const [position, setPosition] = useState({ top: "60%", left: "48%" })
+  const [color,setColor] = useState({color:"black",backgroundColor:"white"})
   const handleclick = (select) => {
       if (select === "yes") {
           setSelected(true)
@@ -10,6 +11,7 @@ function App() {
       }
       else {
           setSelected(false)
+          setColor({color:"white",backgroundColor:"red"})
       }
   }
   const handlePosition = () => {
@@ -33,7 +35,7 @@ function App() {
       <div className='box' style={{ position: "relative", height: "100vh", textAlign: "center", alignContent: "center", backgroundColor: "rgb(192, 153, 255)", }}>
           <h1 style={{ marginBottom: "5vmin", fontSize: "8vmin" }}>Round La Yenar Ka? 7:00 PM</h1>
           <button onClick={() => handleclick("yes")} style={{ backgroundColor:`${isSelected?"green":"white"}`, color:`${isSelected?"white":"black"}`, border: "none", padding: "1vmin", fontSize: "2vmin", cursor: "pointer", borderRadius: "1vmin", marginRight: "3vmin" }}>Yes</button>
-          <button className='no' onClick={() => handleclick("no")} style={{ backgroundColor: "white", color: "black", border: "none", padding: "1vmin", fontSize: "2vmin", cursor: "pointer", borderRadius: "1vmin" }}>No</button><br />
+          <button className='no' onClick={() => handleclick("no")} style={{ backgroundColor: `${color.backgroundColor}`, color:  `${color.color}`, border: "none", padding: "1vmin", fontSize: "2vmin", cursor: "pointer", borderRadius: "1vmin" }}>No</button><br />
           <button
               style={{
                   marginTop: "5vmin",
